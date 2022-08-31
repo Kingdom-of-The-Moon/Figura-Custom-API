@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "figura_custom_api",
+  "version": "${version}",
+
+  "name": "Figura Custom API",
+  "description": "Custom API template for Figura :3",
+  "authors": [
+    "Francy-Chan"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Kingdom-Of-The-Moon/Figura-Custom-API/",
+    "issues": "https://github.com/Kingdom-Of-The-Moon/Figura-Custom-API/issues"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/figura_custom_api/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "figura_api": [
+      "org.moon.figura_custom_api.TestAPI"
+    ]
+  },
+
+  "depends": {
+    "java": ">=${java_version}",
+    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=${loader_version}",
+    "fabric": ">=${fabric_api}",
+    "figura": ">=${figura}"
+  }
+}
