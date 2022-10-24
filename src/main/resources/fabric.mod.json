@@ -20,6 +20,9 @@
   "entrypoints": {
     "figura_api": [
       "org.moon.figura_custom_api.TestAPI"
+    ],
+    "figura_trust": [
+      "org.moon.figura_custom_api.TestTrust"
     ]
   },
 

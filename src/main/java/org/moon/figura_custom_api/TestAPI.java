@@ -5,7 +5,6 @@ import org.moon.figura.avatar.Avatar;
 import org.moon.figura.lua.FiguraAPI;
 import org.moon.figura.lua.LuaNotNil;
 import org.moon.figura.lua.LuaWhitelist;
-import org.moon.figura.trust.Trust;
 
 import java.util.*;
 
@@ -46,18 +45,6 @@ public class TestAPI implements FiguraAPI {
     @Override
     public Collection<Class<?>> getWhitelistedClasses() {
         return List.of(this.getClass());
-    }
-
-    /**
-     * a collection with the trust settings added by this API
-     */
-    @Override
-    public Collection<Trust> customTrust() {
-        return List.of(
-                new Trust("Slider", 0, 100, 0, 0, 100, 100,100), //normal slider
-                new Trust("Step", 0, 100, 20, 0, 25, 50, 75, 100), //stepped slider
-                new Trust("Toggle", 0, 0, 1, 1, 1) //toggle
-        );
     }
 
     /**
